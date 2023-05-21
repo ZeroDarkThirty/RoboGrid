@@ -1,4 +1,6 @@
-﻿var currentLocation = new LocationAxes();
+﻿using System.Net;
+
+var currentLocation = new LocationAxes();
 var currentDirection = Direction.NORTH;
 var currentOrientation = Orientations.NOTSET;
 
@@ -12,10 +14,15 @@ void ReadFile()
         string rootDirectory = Directory.GetParent(Directory.GetParent(Directory.GetParent(currentDirectory).FullName).FullName).FullName;
         string filePath = Path.Combine(rootDirectory, "commands.txt");
         string[] commands = File.ReadAllLines(filePath);
-
+        
         int counter = 0;
         foreach (var command in commands)
         {
+            if (counter == 0 && !command.ToUpper().StartsWith("P"))
+            {
+                throw new Exception("The first command must be a PLACE command");
+            }
+            
             if (command.ToUpper().StartsWith("P"))
             {
                 // set the location
@@ -23,6 +30,12 @@ void ReadFile()
                 int xAxis = Int32.Parse(parts[0].Split(" ")[1]);
                 int yAxis = Int32.Parse(parts[1]);
                 var direction = (Direction) Enum.Parse(typeof(Direction), parts[2]);
+                
+                if (xAxis > 4 || yAxis > 4)
+                {
+                    throw new Exception(
+                        "Invalid grid values. Make sure the grid dimension does not exceed 4x4, starting with position 0x0.");
+                }
                 
                 SetCurrentLocationInGrid(xAxis, yAxis, direction);
                 counter++;
@@ -53,11 +66,6 @@ void ReadFile()
 
 void SetCurrentLocationInGrid(int x, int y, Direction direction)
 {
-    if (x > 4 || y > 4)
-    {
-        throw new Exception("Invalid grid values. Set a value less than 5 on either axes.");
-    }
-    
     currentLocation.X = x;
     currentLocation.Y = y;
     currentDirection = direction;
