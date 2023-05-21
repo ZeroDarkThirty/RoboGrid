@@ -1,0 +1,15 @@
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/bin/Debug/net6.0/RoboGrid
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/bin/Debug/net6.0/RoboGrid.deps.json
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/bin/Debug/net6.0/RoboGrid.runtimeconfig.json
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/bin/Debug/net6.0/RoboGrid.dll
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/bin/Debug/net6.0/RoboGrid.pdb
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.csproj.AssemblyReference.cache
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.AssemblyInfoInputs.cache
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.AssemblyInfo.cs
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.csproj.CoreCompileInputs.cache
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.dll
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/refint/RoboGrid.dll
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.pdb
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/RoboGrid.genruntimeconfig.cache
+/Users/tauqir/Desktop/Coding/RoboGrid/RoboGrid/obj/Debug/net6.0/ref/RoboGrid.dll
